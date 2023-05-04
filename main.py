@@ -42,4 +42,4 @@ def estimate_house_price():
 
 if __name__ == '__main__':
     print('Starting Flask Server for Banglore House Price prediction')
-    app.run(port=5000, host='0.0.0.0')
+    app.run(port=os.getenv("PORT", default=5000), host='0.0.0.0')
