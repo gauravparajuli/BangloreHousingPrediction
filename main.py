@@ -1,7 +1,8 @@
 from flask import Flask, request, jsonify, render_template
 import utils
 
-app = Flask(__name__, template_folder='client', static_folder='client', static_url_path='/static')
+app = Flask(__name__, template_folder='client',
+            static_folder='client', static_url_path='/static')
 
 
 @app.route('/')
@@ -41,4 +42,4 @@ def estimate_house_price():
 
 if __name__ == '__main__':
     print('Starting Flask Server for Banglore House Price prediction')
-    app.run()
+    app.run(port=80)
