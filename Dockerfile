@@ -1,6 +1,6 @@
-FROM ubuntu:18.04
+FROM python:3.7-slim
 
-RUN apt-get install gunicorn3
+RUN apt-get update --yes
 
 COPY requirements.txt requirements.txt
 COPY utils.py /opt/
