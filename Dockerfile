@@ -1,4 +1,4 @@
-FROM ubuntu:22
+FROM ubuntu:18.04
 
 RUN apt-get install gunicorn3
 
