@@ -14,4 +14,4 @@ RUN pip3 install -r requirements.txt
 
 WORKDIR /opt/
 
-CMD ['gunicorn', '-b', '0.0.0.0:8000', 'main:app', '--workers=5']
+CMD ['python3', '-m', 'gunicorn', '-b', '0.0.0.0:8000', 'main:app', '--workers=5']
