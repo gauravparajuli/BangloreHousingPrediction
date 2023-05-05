@@ -1,4 +1,4 @@
-FROM python:3.10
+FROM ubuntu:22
 
 RUN apt-get install gunicorn3
 
