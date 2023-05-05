@@ -46,7 +46,7 @@ const onPredictPriceClick = () => {
         },
         (data, status) => {
             // console.log(data)
-            alert(`Estimated Price is: ${data.estimated_price}`)
+            alert(`Estimated Price is: ${data.estimated_price} lakh(s)`)
         }
     )
 }
