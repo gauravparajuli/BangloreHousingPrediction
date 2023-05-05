@@ -1,8 +1,6 @@
-FROM python:3.10-alpine
+FROM python:3.10
 
-RUN apt-get update -y
-RUN apt-get install python3-pip -y
-RUN apt-get install gunicorn3 -y
+RUN apt-get install gunicorn3
 
 COPY requirements.txt requirements.txt
 COPY utils.py /opt/

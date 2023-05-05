@@ -1,8 +1,8 @@
 version: '3'
 
 services:
-	flaskapp:
-		build: ./Server
-		ports:
-		 - "8000:8000"
-		network_mode: host 
+  flaskapp:
+    build: ./Server
+    ports:
+      - "8000:8000"
+    network_mode: host 
