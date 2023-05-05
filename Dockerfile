@@ -2,6 +2,8 @@ FROM python:3.7-slim
 
 RUN apt-get update --yes
 
+RUN pip3 install -U pip
+
 COPY requirements.txt requirements.txt
 COPY utils.py /opt/
 COPY main.py /opt/
